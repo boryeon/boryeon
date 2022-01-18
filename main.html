@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset = "utf-8">
+    <title>Boryeon</title>
+    <style>
+        /*클릭한 링크와 안한 링크 모두 검정으로 표시, 밑줄 없이*/
+        a:link, a:visited{
+            color: black;
+            text-decoration: none;
+        }
+        /*링크에 마우스오버되었을 때 색상 변경, 밑줄 없이*/
+        a:hover{
+            color: rgb(17, 0, 255);
+            text-decoration: none;
+        }
+        /*클릭이 일어났을 때 색상 변경, 밑줄 없이*/
+        a:active{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+        /*배경의 레이아웃 여백과 색상*/
+        body{
+            margin:0;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgb(224, 220, 151), rgb(92, 80, 145)) no-repeat fixed 100%;
+        }
+        /*전경의 폰트*/
+        div{
+            font-family: 'Noto Sans KR', sans-serif;
+            padding: 0px;
+            margin: 50px;
+        }
+        /*카테고리의 리스트 스타일*/
+        ul.mainlist{
+            list-style:none;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 200%;
+            margin: px;
+            padding:0;
+        }
+        /*세부 목록의 리스트 스타일*/
+        ul.sublist{
+            list-style:none;
+            font-size: 18px;
+            font-weight: initial;
+            line-height: 140%;
+            margin: 0px;
+            padding:0px;
+        }
+    </style>
+    </head>
+    <body>
+    <div>
+        <h1><a href="main.html">Choi Boryeon</a></h1>
+        <ul class="mainlist">
+            <li><a href="about.html">About</a></li>
+            <li>Work</li>
+                <ul class="sublist">
+                <li><a href="patter.html">Pattern(n)</a></li>
+                <li><a href="virga.html">Virga</a></li>
+                <li><a href="pressanyk.html">Press Any K</a></li>
+                <li><a href="island.html">神神</a></li>
+                <li><a href="humanlifecompanion2.html">Human Life Companion2</a></li>
+                </ul>
+            <li>Writing</li>
+                <ul class="sublist">
+                <li><a href="fussyhistoryspeciouspresent.html">Fussy History, Specious Present</a></li>
+                <li><a href="speculativepragmatism.html">Two Vectors of Speculative Pragmatism</a></li>
+                <li><a href="acctheoryoftestimony.html">ACC Theory of Testimony</a></li>
+                <li><a href="astudyontheaberratedpeak.html">A Study on the aberrated peak</a></li>
+                <li><a href="mereologypunk.html">Mereology Punk</a></li>
+                <li><a href="mrhigh.html">Mr. High</a></li>
+                </ul>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </body>
+</html>
