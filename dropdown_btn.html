@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: auto;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        } */
+        
+        .dropdown {
+            position: relative;
+            display: block;
+        }
+
+        .dropbtn {
+            color: red;
+            padding: 16px; 
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            /*submenu를 숨겨줌*/
+            position: relative;
+            /* z-index를 쓰기 위해 설정해줘야한다고 함. 이 상태에서는 relative와 어떤 차이가 있는지 모르겠음. */
+            /* background-color: lightgrey; */
+            min-width: 200px;
+            z-index: 1;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .dropdown-content a {
+            color: rgb(252, 0, 105);
+            padding: 6px 14px;
+            /* 첫 번째 value를 늘리면 행간이 늘어나고, 두 번째 value를 늘리면 왼쪽 공백이 늘어난다.*/
+            text-decoration: none;
+            display: block;
+            /* inline으로 바꾸었더니 세로로 안늘어지고 상위태그 글자만큼 이어쓰기 된다. inline-block하면 똑같이 이어써지는데 각각의 글자에 대한 블락 처리만 된다. 즉 콘텐츠상(여기서는 하위메뉴) block은 메뉴 드롭다운에 필수적 */
+        }
+
+        /* 이하 class에서 조건을 hover 대신 checked로 바꾼다고 클릭형 메뉴가 되지 않는다; anchor 태그를 사용하여 body에서 별도 선언이 필요해보임.. 대체로 javascript의 if, else로 구현하는 것 같다. */
+        
+        .dropdown-content a:hover {
+            /* 펼쳐진 하위메뉴 각각 위에 커서가 올라갔을 때 박스의 색상; 박스 말고 텍스트 색상이 바뀌길 원하므로 대신 color를 선언한다.*/
+            /* background-color: rgb(163, 77, 77); */
+            color: rgb(211, 116, 175);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            /* hover 상태, 즉 메뉴가 펼쳐진 상태에서 상위 메뉴 박스의 색상을 규정 */
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">작업</button>
+        <div class="dropdown-content">
+            <a href="patter.html">Pattern(n)</a>
+            <a href="virga.html">Virga</a>
+            <a href="pressanyk.html">Press Any K</a>
+            <a href="island.html">神神</a>
+            <a href="humanlifecompanion2.html">Human Life Companion2</a>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
